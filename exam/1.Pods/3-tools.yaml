@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tools-deploy 
+spec:
+  replicas: 10 
+  selector:
+    matchLabels:
+      app: tools 
+  template:
+    metadata:
+      labels:
+        app: tools 
+    spec:
+      containers:
+      - name: tools 
+        image: ichte/coretools 
+        resources: {}
+        command: ["/bin/bash"]
+        args: ["-c", "while true; do echo 'busybox running'; sleep 10;done"]

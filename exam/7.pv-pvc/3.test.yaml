@@ -4,6 +4,7 @@ metadata:
   name: myapp-pvc
   namespace: testbed 
 spec:
+  replicas: 1
   selector:
     matchLabels:
       name: myapp-pvc

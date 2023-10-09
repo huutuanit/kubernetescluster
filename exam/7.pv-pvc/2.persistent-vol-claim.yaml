@@ -6,10 +6,10 @@ metadata:
 spec:
   resources:
     requests:
-      storage: 10Gi 
+      storage: 1Gi 
   volumeMode: Filesystem
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany 
   storageClassName: standar
   selector:
     matchLabels:

@@ -1,16 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  namespace: testbed
-  name: pvc1 
+  name: pvc1
 spec:
+  storageClassName: mystorageclass
+  accessModes:
+    - ReadWriteMany
   resources:
     requests:
-      storage: 1Gi 
-  volumeMode: Filesystem
-  accessModes:
-    - ReadWriteMany 
-  storageClassName: standar
-  selector:
-    matchLabels:
-      app: pv1
+      storage: 5Gi

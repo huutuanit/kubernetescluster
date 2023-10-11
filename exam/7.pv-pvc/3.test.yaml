@@ -21,7 +21,7 @@ spec:
           claimName: pvc1
       containers:
       - name: myapp-pvc
-        image: ichte/coretools 
+        image: busybox 
         resources: {}
         volumeMounts:
         - mountPath: "/data"

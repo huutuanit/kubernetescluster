@@ -8,6 +8,8 @@ systemctl start nfs-server
 systemctl start nfs-lock
 systemctl start nfs-idmap
 
+service nfs start
+
 vi /etc/exports
 
 /data  *(rw,sync,no_subtree_check,insecure)

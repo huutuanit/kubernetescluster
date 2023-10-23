@@ -20,4 +20,6 @@ vi /etc/hosts
 # Tạo một Ingress với cấu hình SSL
 openssl req -x509 -newkey rsa:2048 -nodes -days 365 -keyout privkey.pem -out fullchain.pem -subj '/CN=tuanchkubeletes.test'
 kubectl create secret tls tuanchkubeletes-test --cert=fullchain.pem --key=privkey.pem -n ingress-controller
+kubectl delete -f 2.app-test-ingress.yaml
+
 

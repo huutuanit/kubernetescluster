@@ -1,5 +1,5 @@
  # khở tạo nút master của Cluster
- kubeadm init --apiserver-advertise-address=172.168.10.100 --pod-network-cidr=192.168.0.0/16
+kubeadm init --apiserver-advertise-address=172.168.10.100 --pod-network-cidr=192.168.0.0/16
 
 # Sao chep cau hinh
 mkdir -p $HOME/.kube

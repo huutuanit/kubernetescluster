@@ -73,3 +73,7 @@ spec:
     image: alpine
     command: ['sh','-c', "sleep infinitively"]
     imagePullPolicy: IfNotPresent
+#kubectl -n db  exec --stdin --tty mysql-client -- sh
+#apk add mysql-client
+#mysql -u root -p -h mysql-sts-0.mysql-svc.db.svc.cluster.local
+#root/admin
